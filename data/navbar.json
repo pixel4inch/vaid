@@ -1,0 +1,39 @@
+{
+    "brandLogo": "images/logo.svg",
+    "menu": [
+        {
+            "title": "Home",
+            "link": "index.html"
+        },
+        {
+            "title": "Projects",
+            "dropdown": true,
+            "items": [
+                {
+                    "title": "Architecture",
+                    "link": "architecture.html"
+                },
+                {
+                    "title": "Interiors",
+                    "link": "interiors.html"
+                },
+                {
+                    "title": "Landscape",
+                    "link": "landscape.html"
+                }
+            ]
+        },
+        {
+            "title": "About Us",
+            "link": "about.html"
+        },
+        {
+            "title": "Media",
+            "link": "media.html"
+        },
+        {
+            "title": "Contact",
+            "link": "contact.html"
+        }
+    ]
+}

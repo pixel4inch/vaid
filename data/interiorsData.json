@@ -1,0 +1,359 @@
+{
+    "interiors": [
+        {
+            "title": "APARTMENTS",
+            "number": "01",
+            "img": "images/projects/interirors/APARTMENTS/NIKITHA-APARNA-ONE/1.jpg",
+            "link": "pages/interirors/apartments.html"
+        },
+        {
+            "title": "COMMERCIAL",
+            "number": "02",
+            "img": "images/projects/interirors/COMMERCIAL/SRINIVAS-OFFICE/1.jpg",
+            "link": "pages/interirors/commercial.html"
+        },
+        {
+            "title": "CONVENTIONS",
+            "number": "03",
+            "img": "images/projects/interirors/CONVENTIONS/BANQUET-HALL/1.jpg",
+            "link": "pages/interirors/conventions.html"
+        },
+        {
+            "title": "FARM HOUSE",
+            "number": "04",
+            "img": "images/projects/interirors/FARM-HOUSE/COCO-FARM-HOUSE/1.jpg",
+            "link": "pages/interirors/farm-house.html"
+        },
+        {
+            "title": "HOSPITAL",
+            "number": "05",
+            "img": "images/projects/interirors/HOSPITAL/ELEDENT/1.jpg",
+            "link": "pages/interiors/showroom-interiors.html"
+        },
+        {
+            "title": "INDUSTRIAL",
+            "number": "06",
+            "img": "images/projects/interirors/INDUSTRIAL/ICHOR-INTERIORS/1.jpg",
+            "link": "pages/interirors/industrial.html"
+        },
+        {
+            "title": "INSTITUTION",
+            "number": "07",
+            "img": "images/projects/interirors/INSTITUTION/AYRA-ACCOMODATION-BLOCK/1.jpg",
+            "link": "pages/interirors/institution.html"
+        },
+        {
+            "title": "SPORTS",
+            "number": "08",
+            "img": "images/projects/interirors/SPORTS/AYRA/1.jpg",
+            "link": "pages/interirors/sports.html"
+        },
+        {
+            "title": "VILLA",
+            "number": "09",
+            "img": "images/projects/interirors/VILLA/TEJU-VILLA/1.jpg",
+            "link": "pages/interirors/villa.html"
+        }
+    ],
+    "apartments": [
+        {
+            "id": "bda-apartments",
+            "title": "BDA Apartments",
+            "img": "../../images/projects/archtechure/apartments/BDA/a1.jpg",
+            "description": "Contemporary multi-residential design with modern amenities.",
+            "gallery": [
+                "../../images/projects/archtechure/apartments/BDA/a1.jpg",
+                "../../images/projects/archtechure/apartments/BDA/a3.jpg",
+                "../../images/projects/archtechure/apartments/BDA/a4.jpg",
+                "../../images/projects/archtechure/apartments/BDA/a5.jpg",
+                "../../images/projects/archtechure/apartments/BDA/a6.jpg",
+                "../../images/projects/archtechure/apartments/BDA/a7.jpg"
+            ]
+        },
+        {
+            "id": "nandyal-apartments",
+            "title": "Nandyal Apartments",
+            "img": "../../images/projects/archtechure/apartments/NANDYAL/A1.jpg",
+            "description": "Modern apartment complex with optimized layouts.",
+            "gallery": [
+                "../../images/projects/archtechure/apartments/NANDYAL/A1.jpg",
+                "../../images/projects/archtechure/apartments/NANDYAL/A2.jpg",
+                "../../images/projects/archtechure/apartments/NANDYAL/A3.jpg",
+                "../../images/projects/archtechure/apartments/NANDYAL/A4.jpg",
+                "../../images/projects/archtechure/apartments/NANDYAL/A5.jpg",
+                "../../images/projects/archtechure/apartments/NANDYAL/A6.jpg"
+            ]
+        },
+        {
+            "id": "vizag-apartments",
+            "title": "Vizag Apartments",
+            "img": "../../images/projects/archtechure/apartments/Vizag-Appartments/7b027ac0-1bdb-4238-86cb-59ccc68b06c7.jpg",
+            "description": "Modern apartment complex with optimized layouts.",
+            "gallery": [
+                "../../images/projects/archtechure/apartments/Vizag-Appartments/7b027ac0-1bdb-4238-86cb-59ccc68b06c7.jpg",
+                "../../images/projects/archtechure/apartments/Vizag-Appartments/4313bb92-3902-4db0-9a42-a09540982042.jpg",
+                "../../images/projects/archtechure/apartments/Vizag-Appartments/c2a71e21-8dd8-45f2-b6f2-7e5561583841.jpg",
+                "../../images/projects/archtechure/apartments/Vizag-Appartments/e106770f-532c-4912-979f-b462e4483b65.jpg"
+            ]
+        }
+    ],
+    "commercial": [
+        {
+            "id": "rohit-commercial-buildings",
+            "title": "Rohit Commercial Building",
+            "img": "../../images/projects/archtechure/commercial/Rohit/1.jpg",
+            "description": "Commercial building design with functional workspace solutions and modern architectural elements.",
+            "gallery": [
+                "../../images/projects/archtechure/commercial/Rohit/1.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/2.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/3.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/4.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/5.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/6.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/7.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/8.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/9.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/10.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/11.jpeg"
+            ]
+        },
+        {
+            "id": "satya-commercial-complex",
+            "title": "Satya Commercial Complex",
+            "img": "../../images/projects/archtechure/commercial/Satya/1.jpeg",
+            "description": "Multi-use commercial complex with retail and office spaces designed for optimal functionality.",
+            "gallery": [
+                "../../images/projects/archtechure/commercial/Satya/1.jpeg",
+                "../../images/projects/archtechure/commercial/Satya/2.jpeg",
+                "../../images/projects/archtechure/commercial/Satya/3.jpeg",
+                "../../images/projects/archtechure/commercial/Satya/4.jpeg",
+                "../../images/projects/archtechure/commercial/Satya/5.jpeg",
+                "../../images/projects/archtechure/commercial/Satya/6.jpeg"
+            ]
+        }
+    ],
+    "farm-house": [
+        {
+            "id": "coco-farmhouse",
+            "title": "COCO Farm House",
+            "img": "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/09.jpg",
+            "description": "Rural residential architecture blending with natural landscape featuring sustainable design elements.",
+            "gallery": [
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/09.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/10.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/11.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/12.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/13.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/14.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/15.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/16.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/17.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/18.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/19.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/20.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/21.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/22.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/23.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/24.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/25.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/26.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/27.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/28.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/29.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/30.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/31.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/32.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/33.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/34.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/35.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/36.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/37.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/38.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/39.jpg",
+                "../../images/projects/archtechure/farm-house/COCO-FARM-HOUSE/40.jpg"
+            ]
+        },
+        {
+            "id": "manduva-farmhouse",
+            "title": "Manduva Farm House",
+            "img": "../../images/projects/archtechure/farm-house/Manduva/781f75d8-92da-42cf-bd1f-3400adfa92f7.jpg",
+            "description": "Contemporary farm house design integrating modern amenities with traditional rural aesthetics.",
+            "gallery": [
+                "../../images/projects/archtechure/farm-house/Manduva/2876c73f-07d3-4d56-87cc-5dcef1a3f155.JPG",
+                "../../images/projects/archtechure/farm-house/Manduva/29334783-0219-4382-b5d2-7364fb5ad2a2.JPG",
+                "../../images/projects/archtechure/farm-house/Manduva/3db85f80-949e-4129-8d6f-f9d27bf67567.JPG",
+                "../../images/projects/archtechure/farm-house/Manduva/6557bbeb-60db-4171-8e56-89b398d8029f.JPG",
+                "../../images/projects/archtechure/farm-house/Manduva/781f75d8-92da-42cf-bd1f-3400adfa92f7.JPG",
+                "../../images/projects/archtechure/farm-house/Manduva/c2f9a5be-4276-436a-85b7-80fa64db0c50.JPG",
+                "../../images/projects/archtechure/farm-house/Manduva/cebcb02f-a153-40c6-94ca-966b061bb587.JPG",
+                "../../images/projects/archtechure/farm-house/Manduva/ed4c1fad-1367-4a2b-8d2b-fb20ff019617.JPG",
+                "../../images/projects/archtechure/farm-house/Manduva/IMG_5513.JPG",
+                "../../images/projects/archtechure/farm-house/Manduva/IMG_6879.JPG",
+                "../../images/projects/archtechure/farm-house/Manduva/IMG_6880.JPG",
+                "../../images/projects/archtechure/farm-house/Manduva/IMG_6881.JPG",
+                "../../images/projects/archtechure/farm-house/Manduva/IMG_6882.JPG",
+                "../../images/projects/archtechure/farm-house/Manduva/IMG_6884.JPG",
+                "../../images/projects/archtechure/farm-house/Manduva/IMG_6885.JPG"
+            ]
+        },
+        {
+            "id": "nandakishore-farmhouse",
+            "title": "Nandakishore Farm House",
+            "img": "../../images/projects/archtechure/farm-house/Nandakishore/17.jpg",
+            "description": "Elegant farm house architecture with spacious layouts and seamless indoor-outdoor living spaces.",
+            "gallery": [
+                "../../images/projects/archtechure/farm-house/Nandakishore/17.jpg",
+                "../../images/projects/archtechure/farm-house/Nandakishore/18.jpg",
+                "../../images/projects/archtechure/farm-house/Nandakishore/19.jpg",
+                "../../images/projects/archtechure/farm-house/Nandakishore/20.jpg",
+                "../../images/projects/archtechure/farm-house/Nandakishore/21.jpg",
+                "../../images/projects/archtechure/farm-house/Nandakishore/22.jpg",
+                "../../images/projects/archtechure/farm-house/Nandakishore/23.jpg"
+            ]
+        },
+        {
+            "id": "saikrishna-farmhouse",
+            "title": "Sri Krishna Farm House",
+            "img": "../../images/projects/archtechure/farm-house/Sri-Krishna/01.jpg",
+            "description": "Elegant farm house architecture with spacious layouts and seamless indoor-outdoor living spaces.",
+            "gallery": [
+                "../../images/projects/archtechure/farm-house/Sri-Krishna/01.jpg",
+                "../../images/projects/archtechure/farm-house/Sri-Krishna/02.jpg",
+                "../../images/projects/archtechure/farm-house/Sri-Krishna/03.jpg",
+                "../../images/projects/archtechure/farm-house/Sri-Krishna/04.jpg",
+                "../../images/projects/archtechure/farm-house/Sri-Krishna/05.jpg",
+                "../../images/projects/archtechure/farm-house/Sri-Krishna/06.jpg",
+                "../../images/projects/archtechure/farm-house/Sri-Krishna/07.jpg",
+                "../../images/projects/archtechure/farm-house/Sri-Krishna/08.jpg",
+                "../../images/projects/archtechure/farm-house/Sri-Krishna/09.jpg",
+                "../../images/projects/archtechure/farm-house/Sri-Krishna/10.jpg"
+            ]
+        }
+    ],
+    "convension": [
+        {
+            "id": "rohit-commercial-buildings",
+            "title": "Rohit Commercial Building",
+            "img": "../../images/projects/archtechure/commercial/Rohit/1.jpg",
+            "description": "Commercial building design with functional workspace solutions and modern architectural elements.",
+            "gallery": [
+                "../../images/projects/archtechure/commercial/Rohit/1.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/2.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/3.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/4.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/5.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/6.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/7.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/8.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/9.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/10.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/11.jpeg"
+            ]
+        }
+    ],
+    "hospitals": [
+        {
+            "id": "rohit-commercial-buildings",
+            "title": "Rohit Commercial Building",
+            "img": "../../images/projects/archtechure/commercial/Rohit/1.jpg",
+            "description": "Commercial building design with functional workspace solutions and modern architectural elements.",
+            "gallery": [
+                "../../images/projects/archtechure/commercial/Rohit/1.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/2.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/3.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/4.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/5.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/6.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/7.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/8.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/9.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/10.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/11.jpeg"
+            ]
+        }
+    ],
+    "Industrial": [
+        {
+            "id": "rohit-commercial-buildings",
+            "title": "Rohit Commercial Building",
+            "img": "../../images/projects/archtechure/commercial/Rohit/1.jpg",
+            "description": "Commercial building design with functional workspace solutions and modern architectural elements.",
+            "gallery": [
+                "../../images/projects/archtechure/commercial/Rohit/1.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/2.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/3.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/4.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/5.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/6.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/7.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/8.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/9.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/10.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/11.jpeg"
+            ]
+        }
+    ],
+    "institution": [
+        {
+            "id": "rohit-commercial-buildings",
+            "title": "Rohit Commercial Building",
+            "img": "../../images/projects/archtechure/commercial/Rohit/1.jpg",
+            "description": "Commercial building design with functional workspace solutions and modern architectural elements.",
+            "gallery": [
+                "../../images/projects/archtechure/commercial/Rohit/1.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/2.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/3.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/4.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/5.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/6.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/7.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/8.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/9.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/10.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/11.jpeg"
+            ]
+        }
+    ],
+    "sports": [
+        {
+            "id": "rohit-commercial-buildings",
+            "title": "Rohit Commercial Building",
+            "img": "../../images/projects/archtechure/commercial/Rohit/1.jpg",
+            "description": "Commercial building design with functional workspace solutions and modern architectural elements.",
+            "gallery": [
+                "../../images/projects/archtechure/commercial/Rohit/1.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/2.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/3.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/4.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/5.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/6.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/7.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/8.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/9.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/10.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/11.jpeg"
+            ]
+        }
+    ],
+    "villa": [
+        {
+            "id": "rohit-commercial-buildings",
+            "title": "Rohit Commercial Building",
+            "img": "../../images/projects/archtechure/commercial/Rohit/1.jpg",
+            "description": "Commercial building design with functional workspace solutions and modern architectural elements.",
+            "gallery": [
+                "../../images/projects/archtechure/commercial/Rohit/1.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/2.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/3.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/4.jpg",
+                "../../images/projects/archtechure/commercial/Rohit/5.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/6.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/7.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/8.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/9.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/10.jpeg",
+                "../../images/projects/archtechure/commercial/Rohit/11.jpeg"
+            ]
+        }
+    ]
+}

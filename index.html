@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <title>Vaid Associates - Premier Architecture & Interior Design Company | Hyderabad, Dubai, New York</title>
+    <meta name="description"
+        content="Award-winning architecture and interior design firm with 25+ years of experience. Specializing in residential, commercial, and landscape architecture across Hyderabad, Dubai, and New York.">
+    <meta name="keywords"
+        content="architecture firm Hyderabad, interior design Dubai, residential architecture, commercial design, landscape architecture, building design, architectural services">
+    <meta name="author" content="Vaid Associates">
+    <meta name="robots" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://vaidassociates.com/">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Vaid Associates - Premier Architecture & Interior Design Company">
+    <meta property="og:description"
+        content="Award-winning architecture and interior design firm with 25+ years of experience. Creating exceptional spaces across Hyderabad, Dubai, and New York.">
+    <meta property="og:url" content="https://vaidassociates.com/">
+    <meta property="og:site_name" content="Vaid Associates">
+    <meta property="og:image" content="https://vaidassociates.com/images/hero/vaid-associates-og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="en_US">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Vaid Associates - Premier Architecture & Interior Design Company">
+    <meta name="twitter:description"
+        content="Award-winning architecture and interior design firm with 25+ years of experience. Creating exceptional spaces worldwide.">
+    <meta name="twitter:image" content="https://vaidassociates.com/images/hero/vaid-associates-twitter-card.jpg">
+    <meta name="twitter:image:alt" content="Vaid Associates - Modern architectural design showcase">
+
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#d4af37">
+    <meta name="msapplication-TileColor" content="#d4af37">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ArchitecturalService",
+        "name": "Vaid Associates",
+        "description": "Award-winning architecture and interior design firm specializing in residential, commercial, and landscape architecture",
+        "url": "https://vaidassociates.com",
+        "logo": "https://vaidassociates.com/images/logo.png",
+        "foundingDate": "1998",
+        "founder": {
+            "@type": "Person",
+            "name": "Principal Architect"
+        },
+        "address": [
+            {
+                "@type": "PostalAddress",
+                "streetAddress": "555A, Road No. 28, Jubilee Hills",
+                "addressLocality": "Hyderabad",
+                "addressRegion": "Telangana",
+                "postalCode": "500033",
+                "addressCountry": "IN"
+            },
+            {
+                "@type": "PostalAddress",
+                "streetAddress": "456 Sheikh Zayed Road",
+                "addressLocality": "Dubai",
+                "addressCountry": "AE"
+            },
+            {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Main Street",
+                "addressLocality": "New York",
+                "addressRegion": "NY",
+                "postalCode": "10001",
+                "addressCountry": "US"
+            }
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+91-40-XXXX-XXXX",
+            "contactType": "customer service",
+            "availableLanguage": ["English", "Hindi", "Telugu"]
+        },
+        "serviceArea": {
+            "@type": "GeoCircle",
+            "geoMidpoint": {
+                "@type": "GeoCoordinates",
+                "latitude": 17.4197,
+                "longitude": 78.4024
+            }
+        },
+        "services": [
+            "Residential Architecture",
+            "Commercial Architecture",
+            "Interior Design",
+            "Landscape Architecture",
+            "Urban Planning",
+            "Architectural Consultation"
+        ],
+        "sameAs": [
+            "https://www.facebook.com/vaidassociates",
+            "https://www.instagram.com/vaidassociates",
+            "https://www.linkedin.com/company/vaidassociates"
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Architecture & Design Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Residential Architecture",
+                        "description": "Custom home design and residential building architecture"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Commercial Architecture",
+                        "description": "Office buildings, retail spaces, and commercial property design"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Interior Design",
+                        "description": "Complete interior design solutions for residential and commercial spaces"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Leaflet CSS for map (single-file map below slider) -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+    <!-- Map styles (moved to separate file) -->
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/counter.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header-component></header-component>
+
+    <!-- Hero Section -->
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/hero/1.png" class="d-block w-100 hero-img" alt="Modern Architecture">
+                <div class="carousel-caption">
+                    <h1 class="display-4 fw-bold">Best Architecture</h1>
+                    <p class="tagline">Inspire. Enrich. Endure.</p>
+                    <a href="architecture.html" class="btn btn-primary">View Projects</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/hero/2.png" class="d-block w-100 hero-img" alt="Elegant Interiors">
+                <div class="carousel-caption">
+                    <h1 class="display-4 fw-bold">Elegant Interiors</h1>
+                    <p class="tagline">Inspire. Enrich. Endure.</p>
+                    <a href="interiors.html" class="btn btn-primary">View Projects</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/hero/3.png" class="d-block w-100 hero-img" alt="Sustainable Design">
+                <div class="carousel-caption">
+                    <h1 class="display-4 fw-bold">Sustainable Design</h1>
+                    <p class="tagline">Inspire. Enrich. Endure.</p>
+                    <a href="landscape.html" class="btn btn-primary">View Projects</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Map Section: inserted below homepage slider -->
+    <section id="map-section" class="py-5">
+        <div class="container">
+            <div class="text-center mb-4">
+                <h2 class="fw-bold section-title">Our Presence</h2>
+                <p class="text-muted">Find us across the globe</p>
+            </div>
+
+
+            <!-- Map container (responsive) -->
+            <div id="map" aria-label="Office locations map" role="region"></div>
+        </div>
+        <!-- Leaflet JS and map initialization (moved to external JS file) -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+        <script src="js/map.js"></script>
+    </section>
+
+    <!-- Counter Section -->
+    <section id="counter-section" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold section-title">Since 2008</h2>
+                <p class="text-muted">Curating Spaces...</p>
+            </div>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="counter">
+                        <div class="progress-circle" data-progress="300">
+                            <svg class="progress-ring" width="120" height="120">
+                                <circle class="progress-ring__circle" stroke="url(#gradient-1)" stroke-width="10"
+                                    fill="transparent" r="50" cx="60" cy="60" />
+                            </svg>
+                            <span class="counter-value">0</span>
+                        </div>
+                        <p class="counter-label">Projects</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter">
+                        <div class="progress-circle" data-progress="35">
+                            <svg class="progress-ring" width="120" height="120">
+                                <circle class="progress-ring__circle" stroke="url(#gradient-2)" stroke-width="10"
+                                    fill="transparent" r="50" cx="60" cy="60" />
+                            </svg>
+                            <span class="counter-value">0</span>
+                        </div>
+                        <p class="counter-label">Members</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter">
+                        <div class="progress-circle" data-progress="45">
+                            <svg class="progress-ring" width="120" height="120">
+                                <circle class="progress-ring__circle" stroke="url(#gradient-3)" stroke-width="10"
+                                    fill="transparent" r="50" cx="60" cy="60" />
+                            </svg>
+                            <span class="counter-value">0</span>
+                        </div>
+                        <p class="counter-label">Associates</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="counter">
+                        <div class="progress-circle" data-progress="98">
+                            <svg class="progress-ring" width="120" height="120">
+                                <circle class="progress-ring__circle" stroke="url(#gradient-3)" stroke-width="10"
+                                    fill="transparent" r="50" cx="60" cy="60" />
+                            </svg>
+                            <span class="counter-value">0</span>
+                        </div>
+                        <p class="counter-label">Hassle Free Construction</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg width="0" height="0">
+            <defs>
+                <linearGradient id="gradient-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#fdd800;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#fdd800;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="gradient-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#fdd800;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#fdd800;stop-opacity:1" />
+                </linearGradient>
+                <linearGradient id="gradient-3" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" style="stop-color:#fdd800;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#fdd800;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </section>
+
+
+
+    <!-- Featured Projects -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold section-title">Our Categories</h2>
+                <p class="text-muted">Explore our portfolio of exceptional designs</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Project Item -->
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card text-center">
+                        <img src="images/hero/1.png" class="img-fluid rounded" alt="High Rise Apartments">
+                        <h6 class="mt-3 fw-bold">ARCHITECTURE</h6>
+                        <a href="architecture.html" class="btn btn-outline-dark btn-sm my-2">View Project</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card text-center">
+                        <img src="images/hero/2.png" class="img-fluid rounded" alt="Farm House">
+                        <h6 class="mt-3 fw-bold">INTERIORS</h6>
+                        <a href="interiors.html" class="btn btn-outline-dark btn-sm my-2">View Project</a>
+                    </div>
+                </div>
+
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card text-center">
+                        <img src="images/hero/3.png" class="img-fluid rounded" alt="Commercial Hub">
+                        <h6 class="mt-3 fw-bold">LANDSCAPES</h6>
+                        <a href="landscape.html" class="btn btn-outline-dark btn-sm my-2">View Project</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <img src="images/logo.svg" alt="VAID Logo" class="mb-4" height="40">
+                    <p>VAID is a multidisciplinary architecture and interior design firm specializing in sustainable and
+                        green buildings with 15+ years of experience.</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="architecture.html">Projects</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="media.html">Media</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Contact Us</h5>
+                    <ul class="list-unstyled footer-contact">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 555A, Road No. 28, Jubilee Hills, Hyderabad</li>
+                        <li><i class="fas fa-phone me-2"></i> 8977366999</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@vaidarchitects.com</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/vaidarchitect/" class="me-2" target="_blank"><i
+                                class="fab fa-instagram"></i></a>
+
+                        <a href="https://www.facebook.com/vaid.architects" target="_blank"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@vaidarchitects184" target="_blank"><i
+                                class="fab fa-youtube"></i></a>
+                        <a href="https://www.linkedin.com/company/14507970/admin/dashboard/" class="me-2"
+                            target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://x.com/architects_vaid" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4 footer-divider">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-md-0">© 2025 VAID Architects. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Designed with <i class="fas fa-heart text-gold"></i> by VAID</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="webcomponent/headerComponents.js"></script>
+</body>
+
+</html>
