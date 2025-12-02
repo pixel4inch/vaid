@@ -163,6 +163,145 @@
         </div>
     </section>
 
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center" data-aos="fade-up">
+                    <h2 class="section-title mb-4 text-white">FAQ’s</h2>
+                    <p class="lead mb-5 text-white">Your Guide to All Things VAID</p>
+                    <div class="row g-4">
+
+
+                        <div class="custom-accordion" id="faqAccordion">
+
+                            <!-- FAQ 1 — OPEN BY DEFAULT -->
+                            <div class="accordion-item">
+                                <button class="accordion-header active" data-target="faq1">
+                                    <span>What services does VAID offer under ‘What We Do’?</span>
+                                    <i class="icon"></i>
+                                </button>
+                                <div id="faq1" class="accordion-body show">
+                                    VAID provides end-to-end solutions in <b>Architectural Design, Interior Design,
+                                        Landscape Design, Master Planning, Sustainable & Green Building Design, and
+                                        Project Management Consultancy,</b> tailored to residential, commercial,
+                                    institutional, hospitality, and industrial projects.
+                                </div>
+                            </div>
+
+                            <!-- FAQ 2 -->
+                            <div class="accordion-item">
+                                <button class="accordion-header" data-target="faq2">
+                                    <span>How does VAID optimize space usage in its designs?</span>
+                                    <i class="icon"></i>
+                                </button>
+                                <div id="faq2" class="accordion-body">
+                                    We follow a function-first <b>design approach,</b> using thoughtful planning,
+                                    efficient
+                                    circulation flow, natural lighting strategies, and smart zoning to ensure every
+                                    square foot adds value and enhances livability.
+                                </div>
+                            </div>
+
+                            <!-- FAQ 3 -->
+                            <div class="accordion-item">
+                                <button class="accordion-header" data-target="faq3">
+                                    <span>What role does sustainability play in VAID’s designs?</span>
+                                    <i class="icon"></i>
+                                </button>
+                                <div id="faq3" class="accordion-body">
+                                    Sustainability is integral to our process. We incorporate <b>green building
+                                        principles, energy-efficient materials, water-saving systems, and
+                                        climate-responsive design </b> to reduce environmental impact and improve
+                                    long-term performance.
+                                </div>
+                            </div>
+
+                            <!-- FAQ 4 -->
+                            <div class="accordion-item">
+                                <button class="accordion-header" data-target="faq4">
+                                    <span>How does VAID customize interior design for clients?</span>
+                                    <i class="icon"></i>
+                                </button>
+                                <div id="faq4" class="accordion-body">
+                                    Our interiors are developed based on a <b>deep understanding of the client’s
+                                        lifestyle, brand identity, and functional needs.</b> We personalize themes,
+                                    materials, color palettes, and furniture layouts to match their vision and
+                                    usability goals.
+                                </div>
+                            </div>
+
+                            <!-- FAQ 5 -->
+                            <div class="accordion-item">
+                                <button class="accordion-header" data-target="faq5">
+                                    <span>Does VAID handle landscape design along with architecture?</span>
+                                    <i class="icon"></i>
+                                </button>
+                                <div id="faq5" class="accordion-body">
+                                    Yes. We integrate <b>landscape design with architectural planning,</b> creating
+                                    cohesive outdoor environments—from gardens and courtyards to large-scale
+                                    community landscapes.
+                                </div>
+                            </div>
+
+                            <!-- FAQ 6 -->
+                            <div class="accordion-item">
+                                <button class="accordion-header" data-target="faq6">
+                                    <span>Does VAID provide project management services?</span>
+                                    <i class="icon"></i>
+                                </button>
+                                <div id="faq6" class="accordion-body">
+                                    Absolutely. We offer site coordination, vendor management, material selection
+                                    support, execution monitoring, and quality checks to ensure timely and seamless
+                                    project delivery.
+                                </div>
+                            </div>
+
+                            <!-- FAQ 7 -->
+                            <div class="accordion-item">
+                                <button class="accordion-header" data-target="faq7">
+                                    <span>Can VAID handle both small and large-scale projects?</span>
+                                    <i class="icon"></i>
+                                </button>
+                                <div id="faq7" class="accordion-body">
+                                    Yes. With 15+ years of expertise, we design everything from <b>compact residential
+                                        spaces </b>to <b>large-scale institutional, industrial, and township
+                                        developments.</b>
+                                </div>
+                            </div>
+
+                            <!-- FAQ 8 -->
+                            <div class="accordion-item">
+                                <button class="accordion-header" data-target="faq8">
+                                    <span>How does VAID ensure the project reflects the client’s vision?</span>
+                                    <i class="icon"></i>
+                                </button>
+                                <div id="faq8" class="accordion-body">
+                                    We follow a collaborative process—<b>detailed discussions, concept presentations,
+                                        3D visuals, regular updates, and feedback loops</b>—to ensure the final outcome
+                                    aligns perfectly with the client’s expectations.
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer py-5">
         <div class="container">
@@ -243,6 +382,32 @@
                 navbar.classList.remove('navbar-scrolled');
             }
         });
+    </script>
+
+    <!---custome accordion-->
+
+    <script>
+        document.querySelectorAll(".accordion-header").forEach((header) => {
+            header.addEventListener("click", () => {
+                const body = document.getElementById(header.dataset.target);
+
+                // Close all other accordions
+                document.querySelectorAll(".accordion-body").forEach((item) => {
+                    if (item !== body) {
+                        item.classList.remove("show");
+                    }
+                });
+
+                document.querySelectorAll(".accordion-header").forEach((h) => {
+                    if (h !== header) h.classList.remove("active");
+                });
+
+                // Toggle the clicked one
+                header.classList.toggle("active");
+                body.classList.toggle("show");
+            });
+        });
+
     </script>
 </body>
 

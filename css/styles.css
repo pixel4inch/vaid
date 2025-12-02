@@ -8,7 +8,7 @@
     --color-light-gray: #B5B5B5;
     --color-white: #FFFFFF;
     --color-off-white: #F5F5F5;
-    --color-gold: #fff;
+    --color-gold: #ffffff;
     --font-primary: 'Montserrat', sans-serif;
     --font-secondary: 'Montserrat', sans-serif;
 }
@@ -126,6 +126,12 @@ a {
 
 .text-muted {
     color: #CCC !important;
+
+}
+
+.text-left {
+    text-align: left !important;
+
 }
 
 .primay-text-color {
@@ -364,6 +370,60 @@ a {
     transform: translateX(-50%);
 }
 
+
+/* About section */
+
+.about-section {
+    background: #0e0e0e;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.about-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.6);
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    transform-origin: center;
+}
+
+.about-text {
+    color: #d8d8d8;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .section-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 /* Projects */
 #projects {
     background: linear-gradient(to top, var(--color-black), var(--color-dark-gray));
@@ -404,6 +464,9 @@ a {
 .project-card .text-muted {
     display: none;
 }
+
+
+
 
 /* Clickable Cards */
 .clickable-card {
@@ -713,6 +776,98 @@ a {
 html {
     scroll-behavior: smooth;
 }
+
+/* FAQ Accordion */
+/* Accordion Container */
+.custom-accordion .accordion-item {
+    background: #1c1c1c;
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin-bottom: 6px;
+    overflow: hidden;
+}
+
+/* Header Button */
+.custom-accordion .accordion-header {
+    width: 100%;
+    background: #181d22;
+    color: #e0e0e0;
+    padding: 15px 18px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.custom-accordion .accordion-header:hover {
+    background: #030405;
+}
+
+/* Custom Icon */
+.custom-accordion .accordion-header .icon {
+    font-style: normal;
+    font-size: 20px;
+    color: #bfbfbf;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.custom-accordion .accordion-header.active .icon {
+    transform: rotate(45deg);
+    /* + becomes × */
+    color: #ffffff;
+}
+
+.custom-accordion .accordion-header .icon::before {
+    content: "+";
+}
+
+.custom-accordion .accordion-header.active .icon::before {
+    content: "✖";
+}
+
+/* Body */
+.custom-accordion .accordion-body {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 18px;
+    color: #cfcfcf;
+    background: #212529;
+    text-align: left;
+    line-height: 1.6;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+}
+
+/* Expanded Body */
+.custom-accordion .accordion-body.show {
+    max-height: 500px;
+    /* enough height for text */
+    padding: 18px;
+}
+
+/* Remove second column default-open on mobile */
+@media (max-width: 991px) {
+    .desktop-open .accordion-body {
+        display: none !important;
+    }
+
+    .desktop-open .accordion-header {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .desktop-open .accordion-header.active {
+        color: #fff;
+    }
+}
+
+
+
+
+
+
 
 /* Responsive Adjustments */
 @media (max-width: 992px) {
