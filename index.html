@@ -208,7 +208,7 @@
     <section class="py-5 about-section">
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
-                <h2 class="fw-bold section-title">About VAID</h2>
+                <h2 class="fw-bold section-title">Insight</h2>
                 <p class="text-muted">Vision That Delivers</p>
             </div>
             <div class="row align-items-center gy-5">
@@ -225,27 +225,76 @@
 
                 <!-- TEXT COLUMN -->
                 <div class="col-lg-8 text-white px-5" data-aos="fade-left">
-                    <p class="about-text mb-3">
-                        At VAID – Vasantha Architecture, Interiors & Landscape Designers, we believe that every space
-                        should be functional, inspiring, and thoughtfully designed. Our approach blends modern and
-                        contemporary design principles, ensuring that every form and detail is refined with precision.
-                    </p>
 
-                    <p class="about-text mb-3">
-                        With a diverse portfolio spanning architecture, interiors, landscape design, and project
-                        management, we have been shaping meaningful spaces across multiple cities since our inception.
-                        At VAID, we take on projects that challenge convention and demand innovative, future-ready
-                        solutions tailored to each client and context.
-                    </p>
+                    <div class="vaid-tabs-section">
+                        <div class="tabs-container">
+                            <!-- Tab Buttons -->
+                            <div class="tab-buttons">
+                                <button class="tab-btn active" data-tab="intro">Introduction</button>
+                                <button class="tab-btn" data-tab="about">About VAID</button>
+                            </div>
 
-                    <p class="about-text">
-                        We prioritize quality from the very beginning, ensuring that every design decision is made with
-                        clarity and purpose. This focus on upfront detailing saves time during execution and results in
-                        efficient, long-lasting, and aesthetically superior buildings. Our proven quality-control
-                        methods and years of experience empower clients with confidence, transparency, and excellence
-                        throughout the design and construction process.
+                            <!-- Tab Content Wrapper -->
+                            <div class="tab-content-wrapper">
 
-                    </p>
+                                <!-- INTRODUCTION TAB -->
+                                <div id="intro" class="tab-content active">
+                                    <p>
+                                        We are delighted to introduce <b>VAID – Vasantha Architecture, Interiors and
+                                            Landscape Designers,</b> a multidisciplinary design consultancy offering
+                                        comprehensive services in <b>Architecture, Interior Design, Landscape
+                                            Design, and
+                                            Project Management.</b>
+                                    </p>
+                                    <p>
+                                        With a strong emphasis on <b>sustainable, eco-responsive, and green building
+                                            solutions,</b> we design at <b>both micro and macro scales,</b> creating
+                                        built
+                                        environments
+                                        that are functional, future-ready, and enriched with lasting value.
+
+                                    </p>
+                                    <p>
+                                        Backed by <b>17 years of industry expertise,</b> VAID has cultivated a
+                                        reputation for
+                                        delivering <b>innovative, context-driven, and performance-oriented design
+                                            solutions</b>
+                                        that consistently exceed client expectations.
+                                    </p>
+                                </div>
+
+                                <!-- ABOUT VAID TAB -->
+                                <div id="about" class="tab-content">
+                                    <p>
+                                        At VAID – Vasantha Architecture, Interiors & Landscape Designers, we believe
+                                        that every space should be functional, inspiring, and thoughtfully designed. Our
+                                        approach blends modern and contemporary design principles, ensuring that every
+                                        form and detail is refined with precision.
+                                    </p>
+                                    <p>
+                                        With a diverse portfolio spanning architecture, interiors, landscape design, and
+                                        project management, we have been shaping meaningful spaces across multiple
+                                        cities since our inception. At VAID, we take on projects that challenge
+                                        convention and demand innovative, future-ready solutions tailored to each client
+                                        and context.
+
+                                    </p>
+                                    <p>
+                                        We prioritize quality from the very beginning, ensuring that every design
+                                        decision is made with clarity and purpose. This focus on upfront detailing saves
+                                        time during execution and results in efficient, long-lasting, and aesthetically
+                                        superior buildings. Our proven quality-control methods
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
                 </div>
 
             </div>
@@ -666,6 +715,27 @@
             yoyo: true,
             ease: "easeInOut"
         });
+    </script>
+
+    <!---tabstyles-->
+    <script>
+        const tabButtons = document.querySelectorAll(".tab-btn");
+        const tabContents = document.querySelectorAll(".tab-content");
+
+        tabButtons.forEach(btn => {
+            btn.addEventListener("click", () => {
+
+                // Remove active classes
+                tabButtons.forEach(b => b.classList.remove("active"));
+                tabContents.forEach(c => c.classList.remove("active"));
+
+                // Add active class to clicked tab
+                btn.classList.add("active");
+                const tabId = btn.getAttribute("data-tab");
+                document.getElementById(tabId).classList.add("active");
+            });
+        });
+
     </script>
 
 </body>
