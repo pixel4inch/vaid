@@ -1,11 +1,11 @@
 
-fetch("./data/navbar.json")
+fetch("../../data/navbar.json")
     .then(res => res.json())
     .then(nav => {
 
         let html = `
-            <a class="navbar-brand" href="index.html">
-                <img src="${nav.brandLogo}" alt="Logo" class="img-fluid">
+            <a class="navbar-brand" href="../../index.html">
+                <img src="../../${nav.brandLogo}" alt="Logo" class="img-fluid">
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
@@ -30,14 +30,14 @@ fetch("./data/navbar.json")
                 `;
 
                 html += item.items
-                    .map(sub => `<li><a class="dropdown-item nav-link-item" href="${sub.link}">${sub.title}</a></li>`)
+                    .map(sub => `<li><a class="dropdown-item nav-link-item" href="../../${sub.link}">${sub.title}</a></li>`)
                     .join("");
 
                 html += `</ul></li>`;
             } else {
                 html += `
                 <li class="nav-item">
-                    <a class="nav-link nav-link-item" href="${item.link}">${item.title}</a>
+                    <a class="nav-link nav-link-item" href="../../${item.link}">${item.title}</a>
                 </li>`;
             }
         });
@@ -68,7 +68,7 @@ fetch("./data/navbar.json")
 
 
 
-class HeaderComponent extends HTMLElement {
+class PageHeaderComponent extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
      
@@ -85,7 +85,7 @@ class HeaderComponent extends HTMLElement {
 
 
 
-customElements.define('header-component', HeaderComponent);
+customElements.define('pageheader-component', PageHeaderComponent);
 
 
 

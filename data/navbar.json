@@ -6,6 +6,10 @@
             "link": "index.html"
         },
         {
+            "title": "About Us",
+            "link": "about.html"
+        },
+        {
             "title": "Projects",
             "dropdown": true,
             "items": [
@@ -22,10 +26,6 @@
                     "link": "landscape.html"
                 }
             ]
-        },
-        {
-            "title": "About Us",
-            "link": "about.html"
         },
         {
             "title": "Media",

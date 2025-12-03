@@ -1,10 +1,20 @@
+
+// Footer widgets script
+
+// Scroll To Top Button
+
+
+
+
+
+
+
 class FooterComponent extends HTMLElement {
-	connectedCallback() {
-		this.innerHTML = `
+    connectedCallback() {
+        this.innerHTML = `
       
       
-	  <!-- Footer -->
-    <footer class="footer py-5">
+	 <footer class="footer py-5">
         <div class="container">
             <div class="row g-4">
                 <div class="col-lg-3 col-md-6">
@@ -16,8 +26,9 @@ class FooterComponent extends HTMLElement {
                     <h5>Quick Links</h5>
                     <ul class="list-unstyled footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="architecture.html">Projects</a></li>
+                        
                         <li><a href="about.html">About Us</a></li>
+                        <li><a href="architecture.html">Projects</a></li>
                         <li><a href="media.html">Media</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
@@ -58,12 +69,108 @@ class FooterComponent extends HTMLElement {
         </div>
     </footer>
 
-      
-      
-      
-      
+
+  <!-- FLOATING BUTTONS WITH TOOLTIPS -->
+<div class="floating-buttons">
+
+    <!-- Scroll To Top -->
+    <div class="btn-wrapper">
+        <button id="scrollTopBtn" class="float-btn scroll-top">↑</button>
+        <span class="tooltip">Back to Top</span>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <div class="btn-wrapper">
+        <a href="https://web.whatsapp.com/send?phone=YOURNUMBER" 
+           target="_blank" 
+           class="float-btn whatsapp-btn">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
+        </a>
+        <span class="tooltip">WhatsApp Us</span>
+    </div>
+
+    <!-- Chatbot Button -->
+    <div class="btn-wrapper">
+        <button id="chatbotToggle" class="float-btn chat-btn">💬</button>
+        <span class="tooltip">Chat With Us</span>
+    </div>
+
+    <!-- Contact Form Button -->
+    <div class="btn-wrapper">
+        <button id="formToggle" class="float-btn form-btn">✍</button>
+        <span class="tooltip">Send Details</span>
+    </div>
+</div>
+
+
+<!-- POPUP FORM -->
+<div id="contactForm" class="form-popup">
+    <div class="form-box">
+        <div class="form-header">
+            Contact Form
+            <span id="closeForm">✖</span>
+        </div>
+
+        <form id="detailsForm">
+            <label>Name</label>
+            <input type="text" required>
+
+            <label>Details</label>
+            <textarea rows="3" required></textarea>
+
+            <label>Phone Number</label>
+            <input type="tel" required>
+
+            <label>Email</label>
+            <input type="email" required>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+    </div>
+</div>
+
+  
       `;
-	}
+    }
 }
 
 customElements.define('footer-component', FooterComponent);
+
+
+
+// Scroll To Top
+let scrollBtn = document.getElementById("scrollTopBtn");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+        scrollBtn.classList.add("show");
+    } else {
+        scrollBtn.classList.remove("show");
+    }
+});
+
+scrollBtn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+
+// Contact Form Toggle
+const formPopup = document.getElementById("contactForm");
+const openForm = document.getElementById("formToggle");
+const closeForm = document.getElementById("closeForm");
+
+openForm.addEventListener("click", () => {
+    formPopup.style.display = "flex";
+});
+
+closeForm.addEventListener("click", () => {
+    formPopup.style.display = "none";
+});
+
+
+// Form Submission
+document.getElementById("detailsForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Thank you! Your details have been submitted. We will contact you soon.");
+    formPopup.style.display = "none";
+});

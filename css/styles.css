@@ -424,6 +424,95 @@ a {
     }
 }
 
+/* Project Cards Section */
+.project-card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.15);
+}
+
+.project-card .card {
+    border: none;
+    background-color: #222222;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    height: 100%;
+}
+
+.project-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    background-color: #222222;
+}
+
+.card-title {
+    color: #FFFFFF !important;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #B5B5B5 !important;
+}
+
+.modal-content {
+    background-color: #222222;
+    border: 1px solid #444444;
+}
+
+.modal-header {
+    background-color: #000000;
+    border-bottom: 1px solid #444444;
+}
+
+.modal-title {
+    color: #FFFFFF !important;
+}
+
+.btn-close {
+    filter: invert(1);
+}
+
+.modal-body {
+    background-color: #000000;
+}
+
+.modal-xl .carousel-item img {
+    height: 70vh;
+    object-fit: contain;
+    background: #000000;
+}
+
+.btn-dark-yellow {
+    background-color: #222222;
+    color: #fdd800;
+    border: 1px solid #fdd800;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-dark-yellow:hover {
+    background-color: #fdd800;
+    color: #000000;
+    border-color: #fdd800;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(253, 216, 0, 0.3);
+}
+
+.btn-dark-yellow:active {
+    background-color: #e5c200;
+    border-color: #e5c200;
+    transform: translateY(0);
+}
+
+
 /*table styles*/
 .vaid-tabs-section {
     background: #111;
@@ -942,6 +1031,177 @@ html {
     }
 }
 
+
+/* Floating Buttons Container */
+.floating-buttons {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    z-index: 999;
+}
+
+/* Each button wrapper */
+.btn-wrapper {
+    position: relative;
+}
+
+/* Floating Button */
+.float-btn {
+    width: 48px;
+    height: 48px;
+    background: #222;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border: 2px solid #444;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.float-btn:hover {
+    background: #444;
+    transform: scale(1.1);
+}
+
+/* WhatsApp icon */
+.whatsapp-btn img {
+    width: 26px;
+}
+
+
+/* Tooltip Design */
+.tooltip {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%) translateX(10px);
+    background: #000000;
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Tooltip Animation */
+.btn-wrapper:hover .tooltip {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0px);
+}
+
+
+/* Scroll Button Appearance */
+#scrollTopBtn {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#scrollTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* CONTACT FORM POPUP */
+.form-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Form Box */
+.form-box {
+    width: 350px;
+    background: #111;
+    border-radius: 10px;
+    padding: 20px;
+    animation: popAnim 0.3s ease;
+    border: 1px solid #333;
+}
+
+@keyframes popAnim {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Header */
+.form-header {
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-header span {
+    cursor: pointer;
+    color: #999;
+}
+
+/* Inputs */
+form label {
+    color: #ddd;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    background: #222;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+/* Submit Button */
+.submit-btn {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    background: transparent;
+    border: #fff solid 1px;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #fff;
+    color: #000;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
 
 
 
