@@ -965,7 +965,7 @@ html {
     font-weight: 600;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    text-align:left;
     border: none;
     cursor: pointer;
     transition: background 0.3s ease;
@@ -978,23 +978,25 @@ html {
 /* Custom Icon */
 .custom-accordion .accordion-header .icon {
     font-style: normal;
-    font-size: 20px;
+    font-size: 16px;
     color: #bfbfbf;
     transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .custom-accordion .accordion-header.active .icon {
-    transform: rotate(45deg);
-    /* + becomes × */
+    /*transform: rotate(45deg);*/
+   
     color: #ffffff;
 }
 
 .custom-accordion .accordion-header .icon::before {
-    content: "+";
+    content: "\f0d9";
+    font-family: "Font Awesome 6 Free";
 }
 
 .custom-accordion .accordion-header.active .icon::before {
-    content: "✖";
+    content: "\f0d7";
+    font-family: "Font Awesome 6 Free";
 }
 
 /* Body */
