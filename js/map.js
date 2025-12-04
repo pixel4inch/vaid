@@ -33,8 +33,19 @@
             coords: [17.4197, 78.4024],
             title: 'India (Hyderabad, Jubilee Hills)',
             address: '555A, Road No. 28, Jubilee Hills, Hyderabad'
+        },
+        {
+            id: 'newyork',
+            coords: [40.7128, -74.0060],
+            title: 'USA (New York)',
+            address: '123 Main Street, New York, NY 10001'
+        },
+        {
+            id: 'dubai',
+            coords: [25.2048, 55.2708],
+            title: 'UAE (Dubai)',
+            address: '456 Sheikh Zayed Road, Dubai'
         }
-        
     ];
 
     // Create a custom DivIcon HTML for marker
