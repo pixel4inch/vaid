@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Apartments - Interiors | Vaid Associates</title>
+    <title>Commercial - Interiors | Vaid Associates</title>
     <meta name="description"
-        content="Apartment architecture projects by Vaid Associates — modern multi-family residences blending functionality and aesthetics.">
-    <link rel="canonical" href="https://vaidassociates.com/pages/architecture/apartments.html">
+        content="Commercial interior design projects by Vaid Associates — office interiors, retail spaces and commercial renovations.">
+    <link rel="canonical" href="https://vaidassociates.com/pages/interirors/commercial.html">
     <!-- Shared site styles from parent -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
@@ -25,9 +25,9 @@
     <!-- Page header -->
     <header class="page-header py-5">
         <div class="container">
-            <h1>Apartments — Interior Projects</h1>
-            <p class="lead">Apartment interior designs including modern living spaces, luxury residential interiors and
-                apartment renovations.</p>
+            <h1>Commercial — Interior Projects</h1>
+            <p class="lead">Commercial interior designs including office spaces, retail environments and corporate
+                interiors.</p>
         </div>
     </header>
 
@@ -43,40 +43,40 @@
                 </a>
             </div>
         </div>
-    </main>
 
-    <!-- Project Modal -->
-    <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner" id="carouselImages">
-                            <!-- Images will be dynamically inserted here -->
+        <!-- Project Modal -->
+        <div class="modal fade" id="projectModal" tabindex="-1" aria-labelledby="projectModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="projectModalLabel">Project Title</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner" id="carouselImages">
+                                <!-- Images will be dynamically inserted here -->
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
+
     <!-- Footer -->
     <pagefooter-component></pagefooter-component>
 
-    </main>
     <!-- Shared site scripts from parent -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -86,8 +86,26 @@
     <script src="/webcomponent/pagesheaderComponents.js"></script>
     <script src="/webcomponent/pageFooterComponent.js"></script>
 
+    <script>if (window.AOS) { AOS.init(); }</script>
+
     <script>
-        const category = "apartments"; // apartments | commercial | farm-house
+        function openProjectModal(projectId, title, images) {
+            document.getElementById('projectModalLabel').textContent = title;
+            const carouselInner = document.getElementById('carouselImages');
+            carouselInner.innerHTML = '';
+            images.forEach((image, index) => {
+                const carouselItem = document.createElement('div');
+                carouselItem.className = `carousel-item ${index === 0 ? 'active' : ''}`;
+                carouselItem.innerHTML = `<img src="${image}" class="d-block w-100" alt="${title} - Image ${index + 1}" loading="lazy">`;
+                carouselInner.appendChild(carouselItem);
+            });
+            const modal = new bootstrap.Modal(document.getElementById('projectModal'));
+            modal.show();
+        }
+    </script>
+
+    <script>
+        const category = "commercial"; // apartments | commercial | farm-house
 
         fetch("../../data/interiorsData.json")
             .then(response => response.json())
@@ -142,32 +160,6 @@
             })
             .catch(error => console.error("Error loading project list:", error));
     </script>
-
-
-
-    <script>
-        function openProjectModal(project) {
-            document.getElementById('projectModalLabel').textContent = project.title;
-
-            const carouselInner = document.getElementById('carouselImages');
-            carouselInner.innerHTML = '';
-
-            project.gallery.forEach((image, index) => {
-                const item = document.createElement('div');
-                item.className = `carousel-item ${index === 0 ? 'active' : ''}`;
-                item.innerHTML = `
-            <img src="${image}" class="d-block w-100"
-                 alt="${project.title} - Image ${index + 1}" loading="lazy">
-        `;
-                carouselInner.appendChild(item);
-            });
-
-            const modal = new bootstrap.Modal(document.getElementById('projectModal'));
-            modal.show();
-        }
-    </script>
-
-
 </body>
 
 </html>

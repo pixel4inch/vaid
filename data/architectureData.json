@@ -33,7 +33,7 @@
     {
       "title": "INDUSTRIAL",
       "number": "06",
-      "img": "images/projects/archtechure/Industrial/ICHOR/002.jpg",
+      "img": "images/projects/archtechure/archtechure/Industrial/CADBURY/01.jpg",
       "link": "pages/architecture/industrial.html"
     },
     {
@@ -55,8 +55,6 @@
       "link": "pages/architecture/sports.html"
     }
   ],
-
-  
   "apartments": [
     {
       "id": "bda-apartments",
@@ -349,6 +347,19 @@
         "../../images/projects/archtechure/hospitals/Web-arch-resort/016.JPG",
         "../../images/projects/archtechure/hospitals/Web-arch-resort/017.JPG"
       ]
+    },
+    {
+      "id": "OM-PRAKASH",
+      "title": "OM-PRAKASH",
+      "location": "",
+      "siteArea": "",
+      "Type": "",
+      "img": "../../images/projects/archtechure/hospitals/OM-PRAKASH/1.jpeg",
+      "description": "",
+      "gallery": [
+        "../../images/projects/archtechure/hospitals/OM-PRAKASH/1.jpeg",
+        "../../images/projects/archtechure/hospitals/OM-PRAKASH/2.jpeg"
+      ]
     }
   ],
   "Industrial": [
@@ -462,6 +473,26 @@
         "../../images/projects/archtechure/institution/pnjvk/005.jpeg",
         "../../images/projects/archtechure/institution/pnjvk/006.jpeg"
       ]
+    },
+    {
+      "id": "KALPATARU",
+      "title": "KALPATARU",
+      "location": "",
+      "siteArea": "",
+      "Type": "",
+      "img": "../../images/projects/archtechure/institution/KALPATARU/001.jpg",
+      "description": "Commercial building design with functional workspace solutions and modern architectural elements.",
+      "gallery": [
+        "../../images/projects/archtechure/institution/KALPATARU/001.jpg",
+        "../../images/projects/archtechure/institution/KALPATARU/002.jpg",
+        "../../images/projects/archtechure/institution/KALPATARU/003.jpg",
+        "../../images/projects/archtechure/institution/KALPATARU/004.jpg",
+        "../../images/projects/archtechure/institution/KALPATARU/005.jpg",
+        "../../images/projects/archtechure/institution/KALPATARU/006.jpg",
+        "../../images/projects/archtechure/institution/KALPATARU/007.jpg",
+        "../../images/projects/archtechure/institution/KALPATARU/008.jpg",
+        "../../images/projects/archtechure/institution/KALPATARU/009.jpg"
+      ]
     }
   ],
   "restaurant": [
@@ -506,9 +537,67 @@
         "../../images/projects/archtechure/restaurant/Runway-9/10.jpg",
         "../../images/projects/archtechure/restaurant/Runway-9/11.jpg"
       ]
+    },
+    {
+      "id": "krishna",
+      "title": "krishna",
+      "location": "",
+      "siteArea": "",
+      "Type": "",
+      "img": "../../images/projects/archtechure/restaurant/krishna/001.jpg",
+      "description": "",
+      "gallery": [
+        "../../images/projects/archtechure/restaurant/krishna/001.jpg",
+        "../../images/projects/archtechure/restaurant/krishna/002.jpg",
+        "../../images/projects/archtechure/restaurant/krishna/003.jpg",
+        "../../images/projects/archtechure/restaurant/krishna/004.jpg",
+        "../../images/projects/archtechure/restaurant/krishna/005.jpg",
+        "../../images/projects/archtechure/restaurant/krishna/006.jpg",
+        "../../images/projects/archtechure/restaurant/krishna/007.jpg",
+        "../../images/projects/archtechure/restaurant/krishna/008.jpg",
+        "../../images/projects/archtechure/restaurant/krishna/009.jpg"
+      ]
     }
   ],
   "sports": [
+    {
+      "id": "AYRA",
+      "title": "AYRA",
+      "location": "Bangalore",
+      "siteArea": "4 Acres",
+      "Type": "Sports Block",
+      "img": "../../images/projects/archtechure/sports/AYRA/01.jpg",
+      "description": "",
+      "gallery": [
+        "../../images/projects/archtechure/sports/AYRA/01.jpg",
+        "../../images/projects/archtechure/sports/AYRA/02.jpg",
+        "../../images/projects/archtechure/sports/AYRA/03.jpg",
+        "../../images/projects/archtechure/sports/AYRA/04.jpg",
+        "../../images/projects/archtechure/sports/AYRA/05.jpeg",
+        "../../images/projects/archtechure/sports/AYRA/06.jpeg",
+        "../../images/projects/archtechure/sports/AYRA/07.jpeg",
+        "../../images/projects/archtechure/sports/AYRA/08.jpeg"
+      ]
+    },
+    {
+      "id": "AYRA",
+      "title": "AYRA",
+      "location": "Bangalore",
+      "siteArea": "4 Acres",
+      "Type": "Sports Block",
+      "img": "../../images/projects/archtechure/sports/AYRA/01.jpg",
+      "description": "",
+      "gallery": [
+        "../../images/projects/archtechure/sports/AYRA/01.jpg",
+        "../../images/projects/archtechure/sports/AYRA/02.jpg",
+        "../../images/projects/archtechure/sports/AYRA/03.jpg",
+        "../../images/projects/archtechure/sports/AYRA/04.jpg",
+        "../../images/projects/archtechure/sports/AYRA/05.jpeg",
+        "../../images/projects/archtechure/sports/AYRA/06.jpeg",
+        "../../images/projects/archtechure/sports/AYRA/07.jpeg",
+        "../../images/projects/archtechure/sports/AYRA/08.jpeg"
+      ]
+    },
     {
       "id": "AYRA",
       "title": "AYRA",
