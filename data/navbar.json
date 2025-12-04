@@ -28,6 +28,10 @@
             ]
         },
         {
+            "title": "Blogs",
+            "link": "blog.html"
+        },
+        {
             "title": "Media",
             "link": "media.html"
         },

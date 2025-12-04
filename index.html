@@ -684,23 +684,23 @@
     </script>
 
     <script>
-// Trimming Content
+function toggleContent() {
+  const extra = document.getElementById("extra-content");
+  const btn = document.querySelector(".read-more-btn");
 
-        function toggleContent() {
-        const extra = document.getElementById("extra-content");
-        const btn = document.querySelector(".read-more-btn");
+  // Toggle visibility
+  extra.classList.toggle("hidden");
 
-        if (extra.classList.contains("hidden")) {
-        extra.classList.remove("hidden");
-        btn.textContent = "Read Less";
-        } else {
-        extra.classList.add("hidden");
-        btn.textContent = "Read More";
-        window.scrollTo({ top: 0, behavior: "smooth" });
-        }
-    }
+  // Change button text
+  if (extra.classList.contains("hidden")) {
+    btn.textContent = "Read More";
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  } else {
+    btn.textContent = "Read Less";
+  }
+}
+</script>
 
-    </script>
 
 
 
