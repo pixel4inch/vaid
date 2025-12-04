@@ -1150,6 +1150,72 @@ html {
 }
 
 
+/* YOUTUBE VIDEO CAROUSEL  */
+
+
+.video-carousel-container {
+        width: 95%;
+        margin: 25px auto;
+    }
+    .swiper {
+        width: 100%;
+        padding-bottom: 40px;
+    }
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+    }
+
+    .video-card {
+        background: #1a1a1a;
+        border-radius: 12px;
+        padding: 15px;
+        width: 100%;
+        max-width: 90%;
+        box-shadow: 0 0 15px rgba(255,255,255,0.05);
+    }
+
+    iframe {
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #fff;
+        width: 35px;
+        height: 35px;;
+        background-color:#666;
+        border-radius: 100%;
+        opacity: 0.5;
+        transition: all 0.25s linear;
+        -webkit-transition: all 0.25s linear;
+    }
+
+    .swiper-button-next:hover,
+    .swiper-button-prev:hover {
+        
+        background-color:#f9d929;
+        color: #000;
+        opacity: 1;
+         transition: all 0.25s linear;
+        -webkit-transition: all 0.25s linear;
+    }
+
+    .swiper-pagination-bullet {
+        background: #666;
+    }
+    .swiper-pagination-bullet-active {
+        background: #fff;
+    }
+
+    .swiper-button-next::after, .swiper-button-prev::after {
+   
+    font-size: 20px !important;
+}
+
 /* TRIME CONTAINER */
 
 .trimmed-content {

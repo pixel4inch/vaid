@@ -42,7 +42,7 @@
     <meta name="msapplication-TileColor" content="#d4af37">
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
@@ -431,6 +431,92 @@
     </section>
 
 
+    <!---youtube & getquote-->
+    <section class="py-5  text-white">
+  <div class="container">
+    <div class="row align-items-center">
+<div class="col-lg-12 p-3">
+    <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold section-title">Our Media</h2>
+               <p class="text-muted">A curated glimpse into our architectural expressions</p>
+            </div>  
+     <div class="video-carousel-container">
+   
+    <div class="swiper">
+        <div class="swiper-wrapper" id="video-container">
+            <!-- Videos from JSON will appear here -->
+        </div>
+
+        <!-- Controls -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</div>
+</iframe>
+</div>
+
+
+      <!-- RIGHT: GET QUOTE FORM -->
+      <div class="col-lg-12 p-3">
+        <div class="text-center mb-0" data-aos="fade-up">
+                <h2 class="fw-bold section-title">Get a Quote</h2>
+               <p class="text-muted">Shape Your Space with Confidence</p>
+            </div>  
+     <div class="video-carousel-container">
+
+
+        <div class="p-3 bg-dark col-lg-8 col-md-12 mx-auto rounded shadow-lg bg-black">
+         
+
+          <form id="quoteForm" method="POST" action="sendQuote.php">
+            <div class="row">
+            <div class="mb-2 col-lg-6 col-md-12 ">
+              <label class="form-label">Name</label>
+              <input type="text" name="name" class="form-control" required>
+            </div>
+
+            <div class="mb-2 col-lg-6 col-md-12">
+              <label class="form-label">Email</label>
+              <input type="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="mb-2 col-lg-6 col-md-12">
+              <label class="form-label">Phone Number</label>
+              <input type="text" name="phone" class="form-control" required>
+            </div>
+
+            <div class="mb-2 col-lg-6 col-md-12">
+                <label for="service" class="form-label">Select Service</label>
+                <select id="service" class="form-select">>
+                    <option value="">Interior Desing</option>
+                    <option>Residental Design</option>
+                    <option>Office Desing</option>
+                    <option>Commericial Desing</option>
+                    
+                </select>
+            </div>
+
+            <div class="mb-2 col-lg-12 col-md-12">
+              <label class="form-label">Your Requirement</label>
+              <textarea name="message" class="form-control" rows="4" required></textarea>
+            </div>
+
+            <div class="mb-2 col-lg-12 col-md-12 text-center mt-3">
+                 <button class="btn btn-warning mx-auto rounded  font-weight-bold" type="submit">Submit Request</button>
+             </div> 
+
+        </div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
     <!-- FAQ Section -->
     <section class="py-5 bg-dark text-white">
         <div class="container">
@@ -608,10 +694,13 @@
     <!-- Custom JS -->
     <script src="js/main.js"></script>
     <script src="js/counter.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 
     <!-- Web Component -->
     <script src="webcomponent/headerComponents.js"></script>
     <script src="webcomponent/FooterComponent.js"></script>
+
 
     <!-- Gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -699,6 +788,53 @@ function toggleContent() {
     btn.textContent = "Read Less";
   }
 }
+</script>
+
+
+<!-- yout tube ---->
+ <script>
+    // Convert normal YouTube URL → embed URL with ?rel=0
+    function convertYouTubeURL(url) {
+        const videoId = url.split("v=")[1];
+        return `https://www.youtube.com/embed/${videoId}?rel=0&modestbranding=1&color=white`;
+    }
+
+    // Load JSON and build carousel
+    fetch("data/youtube.json")
+        .then(res => res.json())
+        .then(data => {
+            const container = document.getElementById("video-container");
+
+            data.videos.forEach(video => {
+                const embedURL = convertYouTubeURL(video.url);
+
+                container.innerHTML += `
+                    <div class="swiper-slide">
+                        <div class="video-card">
+                            <iframe src="${embedURL}" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                `;
+            });
+
+            // Initialize Swiper after loading data
+            new Swiper('.swiper', {
+                loop: true,
+                spaceBetween: 20,
+                slidesPerView: 1,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+        });
 </script>
 
 
