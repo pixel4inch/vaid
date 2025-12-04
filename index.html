@@ -238,29 +238,21 @@
                             <div class="tab-content-wrapper">
 
                                 <!-- INTRODUCTION TAB -->
-                                <div id="intro" class="tab-content active">
-                                    <p>
-                                        We are delighted to introduce <b>VAID – Vasantha Architecture, Interiors and
-                                            Landscape Designers,</b> a multidisciplinary design consultancy offering
-                                        comprehensive services in <b>Architecture, Interior Design, Landscape
-                                            Design, and
-                                            Project Management.</b>
-                                    </p>
-                                    <p>
-                                        With a strong emphasis on <b>sustainable, eco-responsive, and green building
-                                            solutions,</b> we design at <b>both micro and macro scales,</b> creating
-                                        built
-                                        environments
-                                        that are functional, future-ready, and enriched with lasting value.
+                                <div id="intro" class="tab-content active trimmed-content">
+                                    
+                                        <p><b>We are delighted to introduce VAID – Vasantha Architecture, Interiors & Landscape Designers</b>, one of the <b>Best Architects and Interior Designers in Hyderabad</b>, offering end-to-end design solutions across Architecture, Interior Design, Landscape Design, and Project Management.</p>
 
-                                    </p>
-                                    <p>
-                                        Backed by <b>17 years of industry expertise,</b> VAID has cultivated a
-                                        reputation for
-                                        delivering <b>innovative, context-driven, and performance-oriented design
-                                            solutions</b>
-                                        that consistently exceed client expectations.
-                                    </p>
+                                        <p>At VAID, we place a strong emphasis on <b>sustainable architecture, eco-friendly design, and green building principles</b>, delivering projects that are efficient, climate-responsive, and built for long-term value.</p>
+
+                                        <p><b>Our expertise spans both micro and macro-scale design</b>, enabling us to craft everything from luxury villas, custom homes, residential architecture, and modern interiors to commercial spaces and more.</p>
+
+                                        <div id="extra-content" class="hidden fade">
+                                             <p>With over <b>17 years of experience</b>, VAID has earned a reputation as a trusted name in architectural and interior design services in Hyderabad, delivering innovative, Vastu-aligned, and high-performance design solutions.</p>
+
+                                             <p>Whether you’re planning a new construction or transforming an existing space, VAID brings unmatched creativity, technical expertise, and design excellence.</p>
+                                        </div>
+
+                                        <button class="read-more-btn" onclick="toggleContent()">Read More</button>
                                 </div>
 
                                 <!-- ABOUT VAID TAB -->
@@ -690,6 +682,28 @@
         });
 
     </script>
+
+    <script>
+// Trimming Content
+
+        function toggleContent() {
+        const extra = document.getElementById("extra-content");
+        const btn = document.querySelector(".read-more-btn");
+
+        if (extra.classList.contains("hidden")) {
+        extra.classList.remove("hidden");
+        btn.textContent = "Read Less";
+        } else {
+        extra.classList.add("hidden");
+        btn.textContent = "Read More";
+        window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+    }
+
+    </script>
+
+
+
 
 </body>
 
