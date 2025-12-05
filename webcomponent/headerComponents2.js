@@ -48,17 +48,77 @@ fetch("./data/navbar2.json")
         `;
 
         document.getElementById("navbar-container").innerHTML = html;
+       // Run this AFTER `document.getElementById("navbar-container").innerHTML = html;`
+
+(function setActiveNavByUrl() {
+    // Remove active from all first
+    document.querySelectorAll("#navbar-container .nav-link-item")
+        .forEach(i => i.classList.remove("active"));
+
+    const links = Array.from(document.querySelectorAll("#navbar-container .nav-link-item"));
+
+    // Normalize current URL (strip query/hash, trailing slash)
+    const currentFull = window.location.href.split(/[?#]/)[0].replace(/\/+$/, "");
+    const currentPath = window.location.pathname.replace(/\/+$/, "") || "/";
+
+    // Try to find the best match
+    let matched = false;
+
+    for (const link of links) {
+        const href = link.getAttribute("href");
+
+        // ignore anchors and javascript pseudo-links
+        if (!href || href.startsWith("#") || href.startsWith("javascript:")) continue;
+
+        // Resolve href relative to current page
+        let resolved;
+        try {
+            resolved = new URL(href, window.location.href);
+        } catch (e) {
+            // fallback — skip invalid URLs
+            continue;
+        }
+
+        const resolvedFull = resolved.href.split(/[?#]/)[0].replace(/\/+$/, "");
+        const resolvedPath = resolved.pathname.replace(/\/+$/, "") || "/";
+
+        // Exact page match (preferred)
+        if (resolvedFull === currentFull || resolvedPath === currentPath) {
+            link.classList.add("active");
+            matched = true;
+            break; // stop at first exact match
+        }
+    }
+
+    // If no exact match, try looser matching (e.g., parent path)
+    if (!matched) {
+        for (const link of links) {
+            const href = link.getAttribute("href");
+            if (!href || href.startsWith("#") || href.startsWith("javascript:")) continue;
+
+            let resolved;
+            try {
+                resolved = new URL(href, window.location.href);
+            } catch (e) { continue; }
+
+            const resolvedPath = resolved.pathname.replace(/\/+$/, "") || "/";
+
+            // If current path includes the link path (useful for nested pages)
+            if (resolvedPath !== "/" && currentPath.endsWith(resolvedPath)) {
+                link.classList.add("active");
+                matched = true;
+                break;
+            }
+        }
+    }
+
+    // Optional: if still no match, mark first nav item as active
+    if (!matched && links.length) {
+        links[0].classList.add("active");
+    }
+})();
 
 
-        document.querySelectorAll(".nav-link-item").forEach(link => {
-            link.addEventListener("click", function () {
-                // Remove active from all
-                document.querySelectorAll(".nav-link-item").forEach(a => a.classList.remove("active"));
-
-                // Add active to clicked element
-                this.classList.add("active");
-            });
-        });
 
     })
     .catch(err => console.error("Navbar load error:", err));

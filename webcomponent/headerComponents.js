@@ -45,7 +45,7 @@ fetch("./data/navbar.json")
         html += `
                 </ul>
 
-                <button class="btn btn-sm btn-danger rounded" type="button" data-bs-toggle="modal" data-bs-target="#getquote">Get Quote</button>
+                <button class="btn btn-sm btn-danger " type="button" data-bs-toggle="modal" data-bs-target="#getquote">Get Quote</button>
 
                 <!---Get Quote Model--->
                 <div class="modal fade" id="getquote" tabindex="-1" aria-labelledby="getquoteLabel" aria-hidden="true">
@@ -93,7 +93,7 @@ fetch("./data/navbar.json")
                                     </div>
 
                                     <div class="mb-2 col-lg-12 col-md-12 text-center mt-3">
-                                        <button class="btn btn-warning mx-auto rounded  font-weight-bold"
+                                        <button class="btn btn btn-primary mx-auto  font-weight-bold"
                                             type="submit">Submit Request</button>
                                     </div>
 
