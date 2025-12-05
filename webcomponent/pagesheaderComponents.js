@@ -44,7 +44,69 @@ fetch("../../data/navbar.json")
 
         html += `
                 </ul>
-            </div>
+                 <button class="btn btn-sm btn-danger rounded" type="button" data-bs-toggle="modal" data-bs-target="#getquote">Get Quote</button>
+                 <!---Get Quote Model--->
+                <div class="modal fade" id="getquote" tabindex="-1" aria-labelledby="getquoteLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg" style="z-index:999">
+                        <div class="modal-content">
+                        <div class="modal-header pb-1">
+                            <div class="d-flex justify-content-center flex-column w-100" >
+                                <h1 class="modal-title fs-5 text-center" id="getquoteLabel" style="font-size:25px !important">Get a Quote</h1>
+                                <p class="text-center">Shape Your Space with Confidence</p>
+                             </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="quoteForm" method="POST" action="sendQuote.php">
+                                <div class="row">
+                                    <div class="mb-2 col-lg-6 col-md-12 ">
+                                        <label class="form-label">Name</label>
+                                        <input type="text" name="name" class="form-control" required>
+                                    </div>
+
+                                    <div class="mb-2 col-lg-6 col-md-12">
+                                        <label class="form-label">Email</label>
+                                        <input type="email" name="email" class="form-control" required>
+                                    </div>
+
+                                    <div class="mb-2 col-lg-6 col-md-12">
+                                        <label class="form-label">Phone Number</label>
+                                        <input type="text" name="phone" class="form-control" required>
+                                    </div>
+
+                                    <div class="mb-2 col-lg-6 col-md-12">
+                                        <label for="service" class="form-label">Select Service</label>
+                                        <select id="service" class="form-select">>
+                                            <option value="">Interior Desing</option>
+                                            <option>Residental Design</option>
+                                            <option>Office Desing</option>
+                                            <option>Commericial Desing</option>
+
+                                        </select>
+                                    </div>
+
+                                    <div class="mb-2 col-lg-12 col-md-12">
+                                        <label class="form-label">Your Requirement</label>
+                                        <textarea name="message" class="form-control" rows="4" required></textarea>
+                                    </div>
+
+                                    <div class="mb-2 col-lg-12 col-md-12 text-center mt-3">
+                                        <button class="btn btn-warning mx-auto rounded  font-weight-bold"
+                                            type="submit">Submit Request</button>
+                                    </div>
+
+                                </div>
+                            </form>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+                <!---Get Quote ends--->
+            
+            
+            
+                 </div>
         `;
 
         document.getElementById("navbar-container").innerHTML = html;
@@ -62,10 +124,6 @@ fetch("../../data/navbar.json")
 
     })
     .catch(err => console.error("Navbar load error:", err));
-
-
-
-
 
 
 class PageHeaderComponent extends HTMLElement {

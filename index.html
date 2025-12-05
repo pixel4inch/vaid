@@ -211,7 +211,7 @@
                 <h2 class="fw-bold section-title">Insight</h2>
                 <p class="text-muted">Vision That Delivers</p>
             </div>
-            <div class="row align-items-center gy-5">
+            <div class="row align-items-start gy-5">
 
 
 
@@ -227,72 +227,30 @@
                 <div class="col-lg-8 text-white px-5" data-aos="fade-left">
 
                     <div class="vaid-tabs-section">
-                        <div class="tabs-container">
-                            <!-- Tab Buttons -->
-                            <div class="tab-buttons">
-                                <button class="tab-btn active" data-tab="intro">Introduction</button>
-                                <button class="tab-btn" data-tab="about">About VAID</button>
-                            </div>
+                       
+                       <div id="intro" class="trimmed-content">
 
-                            <!-- Tab Content Wrapper -->
-                            <div class="tab-content-wrapper">
+    <h5><b>Who We Are……</b></h5>
 
-                                <!-- INTRODUCTION TAB -->
-                                <div id="intro" class="tab-content active trimmed-content">
+    <p>We are delighted to introduce <b>VAID – Vasantha Architecture, Interiors & Landscape Designers,</b> one of the <b>Best Architects and Interior Designers in Hyderabad,</b> offering end-to-end design solutions across <b>Architecture, Interior Design, Landscape Design, and Project Management.</b> As a leading multidisciplinary design consultancy, we create functional, aesthetic, and future-ready spaces tailored to modern lifestyles and diverse project needs.
+</p>
 
-                                    <p><b>We are delighted to introduce VAID – Vasantha Architecture, Interiors &
-                                            Landscape Designers</b>, one of the <b>Best Architects and Interior
-                                            Designers in Hyderabad</b>, offering end-to-end design solutions across
-                                        Architecture, Interior Design, Landscape Design, and Project Management.</p>
 
-                                    <p>At VAID, we place a strong emphasis on <b>sustainable architecture, eco-friendly
-                                            design, and green building principles</b>, delivering projects that are
-                                        efficient, climate-responsive, and built for long-term value.</p>
+<p>At VAID, we place a strong emphasis on <b>sustainable architecture, eco-friendly design, and green building principles,</b> delivering projects that are efficient, climate-responsive, and built for long-term value. Our expertise spans both <b>micro and macro-scale design,</b> enabling us to craft everything from <b>luxury villas, custom homes, residential architecture, and modern interiors to commercial spaces, corporate offices, community developments, and landscape environments.</b>
 
-                                    <p><b>Our expertise spans both micro and macro-scale design</b>, enabling us to
-                                        craft everything from luxury villas, custom homes, residential architecture, and
-                                        modern interiors to commercial spaces and more.</p>
+<p>With over <b>17 years of experience,</b> VAID has earned a reputation as a trusted name in <b>architectural and interior design services in Hyderabad,</b> delivering <b>innovative, Vastu-aligned, and high-performance design solutions.</b> Our context-driven approach, attention to detail, and commitment to quality ensure that every project not only meets but exceeds client expectations.</p>
 
-                                    <div id="extra-content" class="hidden fade">
-                                        <p>With over <b>17 years of experience</b>, VAID has earned a reputation as a
-                                            trusted name in architectural and interior design services in Hyderabad,
-                                            delivering innovative, Vastu-aligned, and high-performance design solutions.
-                                        </p>
+<p>Whether you’re planning a new construction or transforming an existing space, VAID brings unmatched creativity, technical expertise, and design excellence—making us one of the most preferred <b>architecture and interior design firms in Hyderabad.</b></p>
+</div>
 
-                                        <p>Whether you’re planning a new construction or transforming an existing space,
-                                            VAID brings unmatched creativity, technical expertise, and design
-                                            excellence.</p>
-                                    </div>
+<button class="read-more-btn" onclick="toggleContent()">Read More</button>
 
-                                    <button class="read-more-btn" onclick="toggleContent()">Read More</button>
-                                </div>
 
-                                <!-- ABOUT VAID TAB -->
-                                <div id="about" class="tab-content">
-                                    <p>
-                                        At VAID – Vasantha Architecture, Interiors & Landscape Designers, we believe
-                                        that every space should be functional, inspiring, and thoughtfully designed. Our
-                                        approach blends modern and contemporary design principles, ensuring that every
-                                        form and detail is refined with precision.
-                                    </p>
-                                    <p>
-                                        With a diverse portfolio spanning architecture, interiors, landscape design, and
-                                        project management, we have been shaping meaningful spaces across multiple
-                                        cities since our inception. At VAID, we take on projects that challenge
-                                        convention and demand innovative, future-ready solutions tailored to each client
-                                        and context.
+                               
+                                
 
-                                    </p>
-                                    <p>
-                                        We prioritize quality from the very beginning, ensuring that every design
-                                        decision is made with clarity and purpose. This focus on upfront detailing saves
-                                        time during execution and results in efficient, long-lasting, and aesthetically
-                                        superior buildings. Our proven quality-control methods
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
+                           
+                       
                     </div>
 
 
@@ -470,7 +428,7 @@
 
 
                 <!-- RIGHT: GET QUOTE FORM -->
-                <div class="col-lg-12 p-3">
+                <div class="col-lg-12 p-3 d-none">
                     <div class="text-center mb-0" data-aos="fade-up">
                         <h2 class="fw-bold section-title">Get a Quote</h2>
                         <p class="text-muted">Shape Your Space with Confidence</p>
@@ -481,46 +439,7 @@
                         <div class="p-3 bg-dark col-lg-8 col-md-12 mx-auto rounded shadow-lg bg-black">
 
 
-                            <form id="quoteForm" method="POST" action="sendQuote.php">
-                                <div class="row">
-                                    <div class="mb-2 col-lg-6 col-md-12 ">
-                                        <label class="form-label">Name</label>
-                                        <input type="text" name="name" class="form-control" required>
-                                    </div>
-
-                                    <div class="mb-2 col-lg-6 col-md-12">
-                                        <label class="form-label">Email</label>
-                                        <input type="email" name="email" class="form-control" required>
-                                    </div>
-
-                                    <div class="mb-2 col-lg-6 col-md-12">
-                                        <label class="form-label">Phone Number</label>
-                                        <input type="text" name="phone" class="form-control" required>
-                                    </div>
-
-                                    <div class="mb-2 col-lg-6 col-md-12">
-                                        <label for="service" class="form-label">Select Service</label>
-                                        <select id="service" class="form-select">>
-                                            <option value="">Interior Desing</option>
-                                            <option>Residental Design</option>
-                                            <option>Office Desing</option>
-                                            <option>Commericial Desing</option>
-
-                                        </select>
-                                    </div>
-
-                                    <div class="mb-2 col-lg-12 col-md-12">
-                                        <label class="form-label">Your Requirement</label>
-                                        <textarea name="message" class="form-control" rows="4" required></textarea>
-                                    </div>
-
-                                    <div class="mb-2 col-lg-12 col-md-12 text-center mt-3">
-                                        <button class="btn btn-warning mx-auto rounded  font-weight-bold"
-                                            type="submit">Submit Request</button>
-                                    </div>
-
-                                </div>
-                            </form>
+                           
                         </div>
                     </div>
 
@@ -788,22 +707,20 @@
     </script>
 
     <script>
-        function toggleContent() {
-            const extra = document.getElementById("extra-content");
-            const btn = document.querySelector(".read-more-btn");
+function toggleContent() {
+    const content = document.getElementById("intro");
+    const btn = document.querySelector(".read-more-btn"); // ← Fixed
 
-            // Toggle visibility
-            extra.classList.toggle("hidden");
+    content.classList.toggle("expanded");
 
-            // Change button text
-            if (extra.classList.contains("hidden")) {
-                btn.textContent = "Read More";
-                window.scrollTo({ top: 0, behavior: "smooth" });
-            } else {
-                btn.textContent = "Read Less";
-            }
-        }
-    </script>
+    if (content.classList.contains("expanded")) {
+        btn.textContent = "Read Less";
+    } else {
+        btn.textContent = "Read More";
+    }
+}
+</script>
+
 
 
     <!-- yout tube ---->

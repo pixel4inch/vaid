@@ -1218,6 +1218,17 @@ html {
 
 /* TRIME CONTAINER */
 
+#intro {
+    max-height: 200px; /* Adjust as needed */
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+#intro.expanded {
+    max-height: 2000px; /* Something large */
+}
+
+
 .trimmed-content {
     max-width: 800px;
     margin: auto;
@@ -1453,6 +1464,13 @@ form textarea {
     }
 }
 
+
+.modal-dialog{
+    z-index: 99;
+}
+.modal-backdrop{
+    z-index: 9 !important;
+}
 .modal-body>div>.col-lg-8 {
     width: 100% !important;
 }

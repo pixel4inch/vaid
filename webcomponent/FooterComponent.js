@@ -92,7 +92,7 @@ class FooterComponent extends HTMLElement {
     
 
     <!-- Contact Form Button -->
-    <div class="btn-wrapper">
+    <div class="btn-wrapper d-none">
         <button id="formToggle" class="float-btn form-btn">✍</button>
         <span class="tooltip">Send Details</span>
     </div>
