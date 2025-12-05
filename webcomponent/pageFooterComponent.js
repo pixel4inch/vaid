@@ -81,7 +81,7 @@ class PageFooterComponent extends HTMLElement {
 
     <!-- WhatsApp Button -->
     <div class="btn-wrapper">
-        <a href="https://web.whatsapp.com/send?phone=YOURNUMBER" 
+        <a href="https://web.whatsapp.com/send?phone=8977366999" 
            target="_blank" 
            class="float-btn whatsapp-btn">
             <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png">
