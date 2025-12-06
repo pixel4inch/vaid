@@ -165,36 +165,34 @@ function initQuoteForm() {
     const form = document.getElementById("quoteForm");
     if (!form) return;
 
-    form.addEventListener("submit", e => {
+    form.addEventListener("submit", (e) => {
         e.preventDefault();
+        const btn = document.getElementById("quoteBtn");
 
-        const submitBtn = document.getElementById("quoteBtn");
-        submitBtn.disabled = true;
-        submitBtn.textContent = "Sending...";
+        btn.disabled = true;
+        btn.textContent = "Sending...";
 
-        const formData = new FormData(form);
-
-        fetch("../sendQuote.php", {
+        fetch("../../send_quote.php", {
             method: "POST",
-            body: formData
+            body: new FormData(form)
         })
-            .then(res => res.json())
-            .then(data => {
-                submitBtn.disabled = false;
-                submitBtn.textContent = "Submit Request";
+            .then(r => r.json())
+            .then(d => {
+                btn.disabled = false;
+                btn.textContent = "Submit Request";
 
-                if (data.success) {
+                if (d.success) {
                     form.reset();
                     document.getElementById("quoteSuccess").classList.remove("d-none");
                 } else {
-                    alert("Error: " + data.message);
+                    alert("Error: " + d.message);
                 }
             })
-            .catch(err => {
-                console.error("Error:", err);
-                submitBtn.disabled = false;
-                submitBtn.textContent = "Submit Request";
-                alert("Something went wrong. Try again.");
+            .catch(() => {
+                btn.disabled = false;
+                btn.textContent = "Submit Request";
+                alert("Something went wrong.");
             });
     });
 }
+

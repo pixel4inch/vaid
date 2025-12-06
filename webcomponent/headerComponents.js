@@ -138,17 +138,32 @@ class HeaderComponent extends HTMLElement {
 
     // Nav active highlighting
     activateNav() {
-        const links = document.querySelectorAll("#navbar-container .nav-link-item");
+        const links = document.querySelectorAll("#navbar-container a.nav-link-item");
 
-        const current = window.location.pathname.replace(/\/+$/, "");
+        // Normalize current page path
+        let current = window.location.pathname;
+        current = current.substring(current.lastIndexOf("/") + 1); // Get only file name
+        if (current === "") current = "index.html"; // For homepage
 
         links.forEach(link => {
-            const href = link.getAttribute("href").replace(/\/+$/, "");
-            if (href === current || href.endsWith(current)) {
+            let href = link.getAttribute("href");
+
+            // Normalize href
+            href = href.substring(href.lastIndexOf("/") + 1);
+
+            // Match exact file
+            if (href === current) {
                 link.classList.add("active");
+
+                // If dropdown item → add active to parent nav
+                const parent = link.closest(".dropdown");
+                if (parent) {
+                    parent.querySelector(".dropdown-toggle").classList.add("active");
+                }
             }
         });
     }
+
 
     // Quote form submit handler
     handleQuoteForm() {
