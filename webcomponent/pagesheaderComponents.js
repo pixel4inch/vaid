@@ -61,7 +61,7 @@ function loadNavbar() {
             html += `
                     </ul>
 
-                    <button class="btn btn-sm btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#getquote">Get Quote</button>
+                    <button  style="margin-left:20px" class="btn btn-sm btn-danger" type="button" data-bs-toggle="modal" data-bs-target="#getquote">Get Quote</button>
 
                     <!-- Modal -->
                     <div class="modal fade" id="getquote" tabindex="-1">
