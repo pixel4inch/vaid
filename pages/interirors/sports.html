@@ -82,8 +82,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="../../js/main.js"></script>
 
-   <!-- Web Component -->
-     <script src="../../webcomponent/pagesheaderComponents.js"></script>
+    <!-- Web Component -->
+    <script src="../../webcomponent/pagesheaderComponents.js"></script>
     <script src="../../webcomponent/pageFooterComponent.js"></script>
 
     <script>
@@ -134,27 +134,7 @@
 
 
 
-    <script>
-        function openProjectModal(project) {
-            document.getElementById('projectModalLabel').textContent = project.title;
-
-            const carouselInner = document.getElementById('carouselImages');
-            carouselInner.innerHTML = '';
-
-            project.gallery.forEach((image, index) => {
-                const item = document.createElement('div');
-                item.className = `carousel-item ${index === 0 ? 'active' : ''}`;
-                item.innerHTML = `
-            <img src="${image}" class="d-block w-100"
-                 alt="${project.title} - Image ${index + 1}" loading="lazy">
-        `;
-                carouselInner.appendChild(item);
-            });
-
-            const modal = new bootstrap.Modal(document.getElementById('projectModal'));
-            modal.show();
-        }
-    </script>
+    <script src="../../js/popup.js"></script>
 
 
 </body>
